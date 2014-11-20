@@ -46,14 +46,9 @@ public class ColorCymk implements Color
 
     private int[] getRGB()
     {
-        int c = (int) this.c;
-        int k = (int) this.k;
-        int m = (int) this.m;
-        int y = (int) this.y;
-
-        int red = 255 * (1 - c) * (1 - k);
-        int green = 255 * (1 - m) * (1 - k);
-        int blue = 255 * (1 - y) * (1 - k);
+        int red = (int) (255.0 * (1.0 - c) * (1.0 - k));
+        int green = (int) (255.0 * (1.0 - m) * (1.0 - k));
+        int blue = (int) (255.0 * (1.0 - y) * (1.0 - k));
 
         return new int[] {red, green, blue};
     }
