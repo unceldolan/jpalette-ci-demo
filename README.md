@@ -22,3 +22,22 @@ Additionally, there is some work that needs to be done in Swatch.java, however t
 
 The tests are there - what you have to do is fill in the missing blanks, committing and pushing your code after every step is complete. The overall goal is to get you to add a few features over time and see how Travis handles those.
 After each push, Travis will build your code separately and present you with the build log. Focus on getting one color to translate correctly first; I would reccomment starting with RGB. 
+
+The Lazy Developer
+------------------
+This simulation also has a bonus. Along the way, I might introduce bugs into your code, which you will have to identify via Travis' log.
+
+Dropbox Submission
+------------------
+By Saturday at 11:59 PM, submit a short writeup (PDF) that shows a screenshot of Travis after you've finished implementing as much as we get through in class. Also, include a paragraph or two about the activity.
+
+A Bit More
+----------
+If you're curious, you can do a whole lot of configuration with Travis. The .travis.yml file allows you to specify multiple versions of runtimes to bulid and run against. So you could test this application for instance under Java 1.6, 1.7, and 1.8 simultaneously. You can also set up and tear down environment variables, install .deb packages, etc.
+[Travis Build Configuration](http://docs.travis-ci.com/user/build-configuration/).
+
+Afterwards
+----------
+I honestly don't know how long this activity will take - probably not the whole class period. If we have time, your team might consider looking into one of these projects (one you haven't heard of). Compare them against Travis. How might you use them to aid software development, especially within integration or deployment?
+
+[Vagrant](https://www.vagrantup.com/), [Salt Stack](http://www.saltstack.com/), [Docker](https://www.docker.com/), [Jenkins] (http://jenkins-ci.org/)
