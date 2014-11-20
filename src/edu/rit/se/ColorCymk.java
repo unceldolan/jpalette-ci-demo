@@ -27,18 +27,36 @@ public class ColorCymk implements Color
 	@Override
 	public ColorHex toHex() throws ColorException
 	{
-		/* Implement this */
+        int[] values = this.getRGB();
 
-		return new ColorHex("000000");
+        String hexString = "";
+        hexString += Integer.toHexString(values[0]);
+        hexString += Integer.toHexString(values[1]);
+        hexString += Integer.toHexString(values[2]);
+
+		return new ColorHex(hexString);
 	}
 
 	@Override
 	public ColorRgb toRgb()
-	{
-		/* Implement this */
-
-		return new ColorRgb(0, 0, 0);
+    {
+        int[] values = this.getRGB();
+		return new ColorRgb(values[0], values[1], values[2]);
 	}
+
+    private int[] getRGB()
+    {
+        int c = (int) this.c;
+        int k = (int) this.k;
+        int m = (int) this.m;
+        int y = (int) this.y;
+
+        int red = 255 * (1 - c) * (1 - k);
+        int green = 255 * (1 - m) * (1 - k);
+        int blue = 255 * (1 - y) * (1 - k);
+
+        return new int[] {red, green, blue};
+    }
 
 	@Override
 	public String toString()
