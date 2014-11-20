@@ -29,7 +29,7 @@ This simulation also has a bonus. Along the way, I might introduce bugs into you
 
 Dropbox Submission
 ------------------
-By Saturday at 11:59 PM, submit a short writeup (PDF) that shows a screenshot of Travis after you've finished implementing as much as we get through in class. Also, include a paragraph or two about the activity.
+By Saturday at 11:59 PM, submit a short writeup (PDF) that shows a screenshot of Travis after you've finished implementing as much as we get through in class. Also, include a paragraph or two about the activity. If I do get around to adding a bug to your repository, also identify in the submission when that occured, and how you fixed it.
 
 A Bit More
 ----------
