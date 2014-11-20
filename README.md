@@ -23,6 +23,12 @@ Additionally, there is some work that needs to be done in Swatch.java, however t
 The tests are there - what you have to do is fill in the missing blanks, committing and pushing your code after every step is complete. The overall goal is to get you to add a few features over time and see how Travis handles those.
 After each push, Travis will build your code separately and present you with the build log. Focus on getting one color to translate correctly first; I would reccomment starting with RGB. 
 
+
+Development
+-----------
+You can import the cloned github project into eclipse and work from there. However, on Travis' side, the ant build script (build.xml) is used to build the project and run tests on it.
+
+
 The Lazy Developer
 ------------------
 This simulation also has a bonus. Along the way, I might introduce bugs into your code, which you will have to identify via Travis' log.
